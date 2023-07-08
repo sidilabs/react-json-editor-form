@@ -1,0 +1,47 @@
+{
+  "version": "0.1",
+  "license": "MIT",
+  "name": "react-json-editor-form",
+  "author": "Thyago Machado Cassimiro",
+  "repository": "sidilabs/react-json-editor-form",
+  "module": "dist/react-json-editor-form.esm.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "roolup ..."
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "rollup": "3.26.2",
+    "@types/lodash.clonedeep": "^4.5.7",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "less": "^4.1.3",
+    "postcss-modules": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.23.0",
+    "lodash.clonedeep": "^4.5.0"
+  }
+}

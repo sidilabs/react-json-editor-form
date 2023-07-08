@@ -1,0 +1,90 @@
+.jsonEditorContainer {
+  .objectContent {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  line-height: 1;
+  font-size: 12px;
+  .objectContent,
+  .arrayContent {
+    position: relative;
+
+    .jsonKey,
+    .jsonValue {
+      margin-top: 2px;
+      margin-right: 10px;
+    }
+    .arrayContent {
+      margin-left: 20px;
+    }
+  }
+
+  .jsonValue {
+    margin-right: 5px !important;
+  }
+
+  .indexLine {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+
+    .lineData {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .tools {
+    display: flex;
+    align-items: center;
+
+    .iconSubtraction {
+      margin-left: 10px;
+    }
+  }
+
+  .addItem {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .mt15 {
+    display: inline-block;
+    margin-top: 7px;
+  }
+  .collapse {
+    position: relative;
+    &.down {
+      transition: transform 0.2s ease;
+      transform: rotate(270deg);
+    }
+    &.up {
+      transition: transform 0.2s ease;
+      transform: rotate(360deg);
+    }
+  }
+
+  .lineData[data-isobject='true'] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  [data-error='true'] {
+    border-color: rgba(255, 0, 0, 0.6);
+  }
+
+  .inputNumber {
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
